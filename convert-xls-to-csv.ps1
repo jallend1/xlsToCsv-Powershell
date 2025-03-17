@@ -4,9 +4,9 @@ $excelApp = New-Object -ComObject Excel.Application
 # Turn off Excel alerts
 $excelApp.DisplayAlerts = $false
 
-# Get all the xls files in the folder
+# Iterate through the XLS files in the folder
 Get-ChildItem -Path "C:\xlsFiles" -Filter "*.xls" | ForEach-Object {
-    # Opens the xls file
+    # Opens the workbook
     $workbook = $excelApp.Workbooks.Open($_.FullName)
 
     # Defines the path for the CSV

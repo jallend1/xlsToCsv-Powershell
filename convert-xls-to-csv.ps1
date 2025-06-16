@@ -1,3 +1,5 @@
+# Converts a folder of XLS files to CSV format
+
 # Create a new Excel instance
 $excelApp = New-Object -ComObject Excel.Application
 

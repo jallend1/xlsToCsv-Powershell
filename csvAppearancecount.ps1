@@ -1,3 +1,5 @@
+# Merges multiple CSV files and counts unique addresses
+
 $csvFolder = "C:\csvFiles"
 $outputFile = "C:\csvFiles\merged_unique.csv"
 
